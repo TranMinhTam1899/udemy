@@ -1,0 +1,27 @@
+.intro{
+    background: linear-gradient(to right, $color-purple, $color-red-0);
+    padding: $pd-2 0;
+    .intro__item{
+        .intro__icon{
+            i{
+                @include text-style($color-white-0,$fs-3 + 20,$fw-bold-0);
+                
+            }
+        }
+        .intro__text{
+            span{
+                @include text-style($color-white-0,$fs-0,$fw-bold);
+            }
+            p{
+                @include text-style($color-white-0,$fs-0,$fw-normal);
+            }
+        }
+    }
+    @include mediaQuery('extra-large'){
+        .intro__item{
+            padding-left: 20%;
+        }
+
+
+    }
+}

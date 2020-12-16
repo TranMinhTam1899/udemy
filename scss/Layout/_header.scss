@@ -1,0 +1,47 @@
+.header__left{
+    display: flex;
+    align-items: center;//canh chieu doc
+    .navbar-brand{
+        img{
+            width: 110px;
+        }
+    }
+    .formSearch{
+        flex-grow: 5;//cap so nhan cua phan tu
+    }
+    .categories{
+        margin-right: 1rem;
+        @include text-style($color-black-light,$fs-0,$fw-normal);
+        text-decoration: none;
+    }
+    .categories, .formSearch{
+        display: block;
+    }
+    @include mediaQuery('extra-large'){
+        .categories, .formSearch{
+            display: none;
+        }
+       
+    }
+}
+
+.header__right{
+    .business, .teach, .btnGroup{
+        display: block;
+    }
+    @include mediaQuery('extra-large'){
+        .business, .teach, .btnGroup{
+            display: none;
+        }
+        
+
+
+    }
+    .nav-item {
+        color: $color-gray-2;
+        
+        
+       
+    }
+}
+

@@ -1,0 +1,6 @@
+.formSearch{
+    @include form-search($color-gray-1,$color-gray-1);
+}
+.coverSearch{
+    @include form-search($color-white-0,$color-white-0);
+}

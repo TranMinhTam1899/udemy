@@ -1,0 +1,71 @@
+@mixin text-style($color-text,$fs,$fw){
+    color: $color-text;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin button-style($bd-color,$bg-color,$pd-y,$pd-x,$bd-radius){
+    border: 1px solid $bd-color;
+    background: $bg-color;
+    padding: $pd-y $pd-x;
+    border-radius: $bd-radius;
+}
+
+@mixin button-hover($bg-color,$color,$border-color){
+    background: $bg-color;
+    color: $color;
+    border: 1px solid $border-color;
+}
+
+@mixin form-search($bg-form-color,$bd-color){
+    background-color: $color-gray-1;
+    .form-control{
+        border-color: transparent;
+        background: transparent;
+        &:focus{
+            background-color: $color-white-0;
+            border-left-color: $bd-color;
+            border-top-color: $bd-color;
+            border-bottom-color: $bd-color;
+            box-shadow: none;
+
+        }
+        &:focus+.input-group-append{//lay thang cung cap ben duoi no
+            .input-group-text{
+                background-color: $color-white-0;
+                border-right-color: $bd-color;
+                border-top-color: $bd-color;
+                border-bottom-color: $bd-color;
+                &:hover{
+                    background-color: $color-red-0;
+                    color:$color-white-0;
+                }
+            }
+        }
+    }
+    .input-group-append{
+        .input-group-text{
+            border-color: transparent;
+            background-color: transparent;
+            color: $color-red-0;
+            &:hover{
+                background-color: $color-red-0;
+                color:$color-white-0;
+            }
+        }
+        
+    }
+}
+
+@mixin mediaQuery($screen) {
+    
+    @if map-has-key($map:$breakpoints , $key:$screen ){
+        $value:map-get($map: $breakpoints, $key:$screen );
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+    @else{
+        @warn"`#{$screen} khong ton tai `";
+    }
+}

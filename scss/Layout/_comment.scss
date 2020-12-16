@@ -1,0 +1,55 @@
+.comment{
+    background-color: $color-gray-5;
+    .comment__carousel{
+        .commment__items{
+            border: 1px solid $color-gray-3;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: $color-white-0;
+            height: 250px;
+            .comment__content{
+                display: flex;
+                .comment__img{   
+                    img{
+                        width: 70px;
+                        border-radius: 50%;
+                    }
+                    span{
+                        background-color: $color-gray-4;
+                        color: $color-white-0;
+                        border-radius: 50%;
+                        padding: 15px 25px;
+                        line-height: 71px;
+                        font-size: $fs-3 + 4;
+                    }
+                }
+                .comment__name{
+                    padding: 25px 10px;
+                    @include text-style($color-black-0,$fs-0,$fw-bold-0);
+                }
+                
+            }
+            .comment__text{
+                padding: 10px 0;
+                letter-spacing: 1px;
+
+            }
+        }
+    }
+}
+
+.comment{
+    .udemy{
+        .udemy__content{
+            .udemy__items{
+                padding: 0 25%;
+            }
+            
+        }
+        .udemy__content.border-right{
+            border-right:none; 
+        }
+       
+    }
+   
+}

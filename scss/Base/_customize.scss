@@ -1,0 +1,42 @@
+.owl-prev{
+    position: absolute;
+    top: 30%;
+    left: -2%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    span{
+       @include text-style($color-blue,$fs-2 + 10,$fw-bold);
+      line-height: 0.8;
+
+    }
+    &:hover{
+        box-shadow: 0 3px 1px 0 rgba(20,23,28,.1);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.owl-next{
+    position: absolute;
+    top: 30%;
+    right: -2%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    span{
+       @include text-style($color-blue,$fs-2 + 10,$fw-bold);
+      line-height: 0.8;
+    }
+    &:hover{
+        box-shadow: 0 3px 1px 0 rgba(20,23,28,.1);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    background: $color-white-cream;
+    border-radius: 50%;
+    box-shadow: 0 3px 1px 0 rgba(20,23,28,.1);
+};

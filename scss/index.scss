@@ -1,0 +1,17 @@
+@import './Helper/variables';
+@import './Helper/mixin';
+
+@import './Base/reset';
+@import './Component/button';
+@import './Component/formSearch';
+
+@import './Layout/header';
+@import './Layout/cover';
+@import './Layout/intro';
+@import './Layout/course';
+@import './Layout/personalized.scss';
+@import './Layout/categories.scss';
+@import './Layout/comment';
+@import './Layout/footer';
+@import './Base/customize';
+

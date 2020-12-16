@@ -1,0 +1,31 @@
+.personalized{
+    background-color: $color-black-0;
+    color: white;
+    box-shadow: 0 -10px 0 0 rgb(172, 75, 75);
+    .personalized__content{
+        
+        .personalized__icon{
+            a{
+                padding: 15px 40px;
+            }
+            i{
+                font-size: 30px;
+                line-height: 130px;
+            }
+        }
+    }
+    .personalized__icon{
+        i{
+            display: block;
+        }
+    }
+    @include  mediaQuery('small'){
+        padding: 50px 0;
+        .personalized__icon{
+            i{
+                display: none;
+            }
+            
+        }
+    }
+}
